@@ -1,0 +1,84 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.gridWatch{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 12rem;
+    min-height: 50px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto)repeat(5, 50px);
+    grid-column-gap: 2rem;
+}
+.OUTPUT{
+    grid-column: 1/-1;
+    background-color: rgba(255, 255, 255, 0.75);
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: 1rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+    
+}
+.myButton {
+    display: flex;
+    align-items: flex-end;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.time
+{
+    display: flex;
+    font-size: 2rem;
+    margin-right: 12rem;
+}
+
+        
